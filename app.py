@@ -21,7 +21,7 @@ if api_key:
         if user_text:
             with st.spinner("Акылман AI ойлонуп жатат..."):
                 response = client.models.generate_content(
-                    model="gemini-1.5-flash",
+                    model="gemini-pro-flash",
                     contents=f"{SYSTEM_PROMPT}\n\nКолдонуучу: {user_text}"
                 )
                 st.markdown(f"### 🤖 Жооп:\n{response.text}")
